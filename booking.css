@@ -1,0 +1,91 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+
+  background-image:
+  linear-gradient(rgba(255,255,255,0.85),
+  rgba(255,255,255,0.85)),
+
+  url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+  min-height:100vh;
+}
+
+header{
+  background:#111;
+  padding:20px 60px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h1{
+  color:white;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+  gap:20px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+}
+
+.booking-page{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.booking-page h2{
+  margin-bottom:40px;
+  font-size:40px;
+}
+
+form{
+  max-width:500px;
+  margin:auto;
+
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+input,
+select{
+  padding:15px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+
+button{
+  padding:15px;
+  border:none;
+  background:#00aaff;
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+}
