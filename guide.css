@@ -1,0 +1,137 @@
+/* guide.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  min-height:100vh;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  color:white;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.6);
+  min-height:100vh;
+  padding:60px;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:50px;
+}
+
+nav h1{
+  font-size:35px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+}
+
+.guide-container{
+  max-width:1100px;
+  margin:auto;
+
+  background:rgba(255,255,255,0.1);
+
+  backdrop-filter:blur(10px);
+
+  padding:40px;
+
+  border-radius:20px;
+}
+
+.guide-container h2{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+.guide-container p{
+  line-height:1.8;
+}
+
+.section{
+  margin-top:40px;
+}
+
+.section h3{
+  margin-bottom:20px;
+  font-size:30px;
+}
+
+.section ul{
+  margin-left:20px;
+}
+
+.section li{
+  margin-bottom:12px;
+}
+
+/* Tourist Guides */
+
+.guides{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+
+.guide-card{
+  background:rgba(255,255,255,0.15);
+
+  padding:20px;
+
+  border-radius:15px;
+
+  backdrop-filter:blur(5px);
+}
+
+.guide-card h4{
+  margin-bottom:10px;
+  font-size:22px;
+}
+
+.guide-card p{
+  margin-bottom:10px;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  background:#00aaff;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#008ecc;
+}
+
+
+.guide-container{
+  text-align:center;
+}
+
+.section ul{
+  list-style-position:inside;
+  padding:0;
+}
+
+.guides{
+  margin-top:30px;
+}
+
+.guide-card{
+  text-align:center;
+}
