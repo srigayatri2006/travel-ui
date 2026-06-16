@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Places from "./pages/Places";
@@ -13,35 +13,24 @@ import NewYork from "./pages/NewYork";
 
 function App() {
   return (
-    <BrowserRouter>
-
+    <HashRouter>
       <Routes>
 
         {/* Main Pages */}
-
         <Route path="/" element={<Home />} />
-
         <Route path="/places" element={<Places />} />
-
         <Route path="/booking" element={<Booking />} />
 
         {/* Destination Guide Pages */}
-
         <Route path="/maldives" element={<Maldives />} />
-
         <Route path="/paris" element={<Paris />} />
-
         <Route path="/dubai" element={<Dubai />} />
-
         <Route path="/bali" element={<Bali />} />
-
         <Route path="/swiss" element={<Swiss />} />
-
         <Route path="/newyork" element={<NewYork />} />
 
       </Routes>
-
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
